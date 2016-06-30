@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TrediMarketplace_PriceUpdate>
+            <version>0.0.1</version>
+        </TrediMarketplace_PriceUpdate>
+    </modules>
+    <global>
+        <models>
+            <tredimarketplace_priceupdate>
+                <class>TrediMarketplace_PriceUpdate_Model</class>
+            </tredimarketplace_priceupdate>
+        </models>
+        <events>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <tredimarketplace_priceupdate>
+                        <class>tredimarketplace_priceupdate/observer</class>
+                        <method>priceUpdate</method>                        
+                    </tredimarketplace_priceupdate>
+                </observers>
+            </checkout_cart_product_add_after>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TrediMarketplace_PriceUpdate>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TrediMarketplace_PriceUpdate>
+    </modules>
+</config>
